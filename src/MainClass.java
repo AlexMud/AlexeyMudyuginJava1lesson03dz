@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MainClass {
 
     public static Scanner sc = new Scanner(System.in);
-
+// задание 1
     public static void main(String[] args) {
         do {
             Random random = new Random();
@@ -23,7 +23,7 @@ public class MainClass {
                         System.out.println("Your number is " + ((input > number) ? "higher." : "lower."));
                         count++;
                     }
-                } catch (InputMismatchException ex) {
+                } catch (InputMismatchException ex) { // эти данные нашел в интернете, т.к. вбил вместо числа слово, пришлось гуглить и чинить
                     System.out.println("Enter the NUMBER from 0 to 9!");
                     sc.next();
                 }
@@ -34,3 +34,4 @@ public class MainClass {
             } while (sc.next().equals("1"));
     }
 }
+// задание 2 не делал
